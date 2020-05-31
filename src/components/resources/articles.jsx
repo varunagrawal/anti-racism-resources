@@ -24,7 +24,6 @@ function format(article) {
 }
 
 function Author(props) {
-  console.log(props.article.author)
   if (props.article.author) {
     return <span>by {props.article.author}</span>
   }
