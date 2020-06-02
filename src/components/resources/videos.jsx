@@ -1,5 +1,6 @@
 import React from "react"
 import resources from "../../../content/resources/videos.yaml"
+import { Link } from "../../components/link"
 import { createList } from "../../utils"
 
 export function Videos() {
@@ -14,7 +15,7 @@ export function Videos() {
 function format(video) {
   return (
     <li>
-      <a href={video.link} target="_blank">{video.title}</a>
+      <Link href={video.link}>{video.title}</Link>
     </li>
   )
 }

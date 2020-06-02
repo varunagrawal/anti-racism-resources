@@ -1,5 +1,6 @@
 import React from "react"
 import resources from "../../../content/resources/podcasts.yaml"
+import { Link } from "../../components/link"
 import { createList } from "../../utils"
 
 export function Podcasts() {
@@ -14,7 +15,7 @@ export function Podcasts() {
 function format(podcast) {
   return (
     <li>
-      <a href={podcast.link} target="_blank">{podcast.title}</a>
+      <Link href={podcast.link}>{podcast.title}</Link>
     </li>
   )
 }

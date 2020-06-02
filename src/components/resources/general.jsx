@@ -1,6 +1,7 @@
 import React from "react"
-import { createList } from "../../utils"
 import resources from "../../../content/resources/general.yaml"
+import { Link } from "../../components/link"
+import { createList } from "../../utils"
 
 export function General() {
   return (
@@ -19,9 +20,7 @@ export function General() {
 function format(resource) {
   return (
     <li>
-      <a href={resource.link} target="_blank">
-        {resource.title}
-      </a>
+      <Link href={resource.link}>{resource.title}</Link>
     </li>
   )
 }

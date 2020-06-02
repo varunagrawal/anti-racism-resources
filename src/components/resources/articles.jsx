@@ -1,5 +1,6 @@
 import React from "react"
 import resources from "../../../content/resources/articles.yaml"
+import { Link } from "../../components/link"
 import { createList } from "../../utils"
 
 export function Articles() {
@@ -14,9 +15,9 @@ export function Articles() {
 function format(article) {
   return (
     <li>
-      <a href={article.link} target="_blank">
+      <Link href={article.link}>
         "{article.title}"
-      </a>{" "}
+      </Link>{" "}
       <Author article={article} /> <Publisher article={article} />{" "}
       <Date article={article} />
     </li>

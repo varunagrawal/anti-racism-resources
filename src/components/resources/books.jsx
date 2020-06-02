@@ -1,5 +1,6 @@
 import React from "react"
 import resources from "../../../content/resources/books.yaml"
+import { Link } from "../../components/link"
 import { createList } from "../../utils"
 
 export function Books() {
@@ -14,7 +15,7 @@ export function Books() {
 function format(book) {
   return (
     <li>
-      <a href={book.link} target="_blank">{book.title}</a> <Author book={book} />
+      <Link href={book.link}>{book.title}</Link> <Author book={book} />
     </li>
   )
 }

@@ -1,5 +1,6 @@
 import React from "react"
 import resources from "../../../content/resources/media.yaml"
+import { Link } from "../../components/link"
 import { createList } from "../../utils"
 
 export function Media() {
@@ -14,7 +15,7 @@ export function Media() {
 function format(media) {
   return (
     <li>
-      {media.title} on <a href={media.link} target="_blank">{media.provider}</a>
+      {media.title} on <Link href={media.link}>{media.provider}</Link>
     </li>
   )
 }

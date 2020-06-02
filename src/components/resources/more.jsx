@@ -1,5 +1,6 @@
 import React from "react"
 import resources from "../../../content/resources/more.yaml"
+import { Link } from "../../components/link"
 import { createList } from "../../utils"
 
 export function More() {
@@ -14,7 +15,7 @@ export function More() {
 function format(item) {
   return (
     <li>
-      <a href={item.link} target="_blank">{item.title}</a>
+      <Link href={item.link}>{item.title}</Link>
     </li>
   )
 }

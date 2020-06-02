@@ -8,6 +8,7 @@ import { Books } from "./resources/books"
 import { Media } from "./resources/media"
 import { Organizations } from "./resources/organizations"
 import { More } from "./resources/more"
+import { Letter } from "./resources/letter"
 
 export default () => (
   <Container>
@@ -26,5 +27,7 @@ export default () => (
     <Organizations />
     <br />
     <More />
+    <br />
+    <Letter />
   </Container>
 )
