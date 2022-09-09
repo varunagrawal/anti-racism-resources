@@ -10,10 +10,10 @@ module.exports = {
     title: "Anti-Racism Resources",
   },
   pathPrefix: `/anti-racism-resources`,
+  trailingSlash: 'never',
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-remove-trailing-slashes`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
