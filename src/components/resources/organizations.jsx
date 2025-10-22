@@ -5,16 +5,16 @@ import { createList } from "../../utils"
 
 export function Organizations() {
   return (
-    <>
+    <div>
       <h3>{resources.title}</h3>
       <ul>{createList(resources.list, format)}</ul>
-    </>
+    </div>
   )
 }
 
-function format(organization) {
+function format(i, organization) {
   return (
-    <li>
+    <li key={i}>
       {organization.title}
       {"\t\t"}
       <SocialMedia name="Twitter" link={organization.twitter} />

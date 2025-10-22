@@ -5,16 +5,16 @@ import { createList } from "../../utils"
 
 export function Articles() {
   return (
-    <>
+    <div>
       <h3>{resources.title}</h3>
       <ul>{createList(resources.list, format)}</ul>
-    </>
+    </div>
   )
 }
 
-function format(article) {
+function format(i, article) {
   return (
-    <li>
+    <li key={i}>
       <Link href={article.link}>
         "{article.title}"
       </Link>{" "}

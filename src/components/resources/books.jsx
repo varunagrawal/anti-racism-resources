@@ -12,9 +12,9 @@ export function Books() {
   )
 }
 
-function format(book) {
+function format(i, book) {
   return (
-    <li>
+    <li key={i}>
       <Link href={book.link}>{book.title}</Link> <Author book={book} />
     </li>
   )

@@ -5,21 +5,26 @@ import { createList } from "../../utils"
 
 export function General() {
   return (
-    <>
+    <div>
       <h3>{resources.title}</h3>
-      <h5>Books</h5>
+      <h4>Books</h4>
       {createList(resources.books, format)}
-      <h5>Podcasts</h5>
+      <br />
+
+      <h4>Podcasts</h4>
       {createList(resources.podcasts, format)}
-      <h5>Articles</h5>
+      <br />
+
+      <h4>Articles</h4>
       {createList(resources.articles, format)}
-    </>
+      <br />
+    </div>
   )
 }
 
-function format(resource) {
+function format(i, resource) {
   return (
-    <li>
+    <li key={i}>
       <Link href={resource.link}>{resource.title}</Link>
     </li>
   )

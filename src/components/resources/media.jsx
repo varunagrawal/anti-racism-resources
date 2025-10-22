@@ -5,16 +5,16 @@ import { createList } from "../../utils"
 
 export function Media() {
   return (
-    <>
+    <div>
       <h3>{resources.title}</h3>
       <ul>{createList(resources.list, format)}</ul>
-    </>
+    </div>
   )
 }
 
-function format(media) {
+function format(i, media) {
   return (
-    <li>
+    <li key={i}>
       {media.title} on <Link href={media.link}>{media.provider}</Link>
     </li>
   )

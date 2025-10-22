@@ -1,9 +1,8 @@
-import React from "react"
 import { Container } from "react-bootstrap"
 
-export function Footer(props) {
+export function Footer() {
   return (
-    <Container class="text-center">
+    <Container className="text-center">
       <br/><br/><br/>
       <br/><br/><br/>
       <p>
