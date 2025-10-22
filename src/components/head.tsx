@@ -16,7 +16,7 @@ export function Head() {
         crossOrigin="anonymous"
       />
 
-      <link rel="icon" href="/favicon.ico"></link>
+      <link rel="icon" href="/anti-racism-resources/favicon.ico"></link>
 
       <script
         src="https://kit.fontawesome.com/d58dae4cfc.js"
