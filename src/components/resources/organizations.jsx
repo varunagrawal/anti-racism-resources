@@ -35,7 +35,7 @@ function format(i, organization) {
 function SocialMedia(props) {
   if (props.link)
     return (
-      <button type="button" class="btn btn-light">
+      <button type="button" className="btn btn-light">
         <Link href={props.link}>{props.name}</Link>
       </button>
     )
