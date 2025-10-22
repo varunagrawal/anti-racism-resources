@@ -16,6 +16,7 @@ export function Head() {
         crossOrigin="anonymous"
       />
 
+      {/* Favicon */}
       <link rel="icon" href="/anti-racism-resources/favicon.ico"></link>
 
       <script
