@@ -2,7 +2,6 @@ import { Container } from "react-bootstrap";
 import { Articles } from "./resources/articles";
 import { Books } from "./resources/books";
 import { General } from "./resources/general";
-import { Letter } from "./resources/letter";
 import { Media } from "./resources/media";
 import { More } from "./resources/more";
 import { Organizations } from "./resources/organizations";
@@ -27,6 +26,5 @@ export default () => (
     <br />
     <More />
     <br />
-    <Letter />
   </Container>
 );
