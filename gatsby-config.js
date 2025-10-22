@@ -12,10 +12,11 @@ module.exports = {
   pathPrefix: `/anti-racism-resources`,
   trailingSlash: 'never',
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    "gatsby-plugin-postcss", "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: "Anti-Racism Resources",
         short_name: "anti-racism-resources",
@@ -31,6 +32,12 @@ module.exports = {
         // Any invalid keyword or empty string defaults to `anonymous`
         crossOrigin: `use-credentials`,
       },
-    },
-  ],
+    }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "images",
+        "path": "./src/images/"
+      },
+      __key: "images"
+    }],
 }
